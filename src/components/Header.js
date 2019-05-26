@@ -3,8 +3,8 @@ const Header = (props) =>{
     return (
         <div>
             <nav>
-                <div className="nav-wrapper ligth-blue darken-2">
-                    <a className="brand-logo">{props.titulo}</a>
+                <div className="nav-wrapper darken-2">
+                    <span className="brand-logo">{props.titulo}</span>
                 </div>
             </nav>
         </div>
