@@ -16,7 +16,7 @@ class Principal extends Component {
     buscarClimaRequest= request => {
         const {ciudad,pais} = request;
         const appid = '4a606263653f8bb7edcb187175b95e08';
-        let url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appid}`
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appid}`
         fetch(url).then(response => response.json())
         .then(response => {
             this.setState({climaRespuesta:response})
