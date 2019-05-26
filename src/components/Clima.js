@@ -5,7 +5,7 @@ class Clima extends React.Component {
         const { name , weather , main } = this.props.response;
         if(!name || !weather || !main) return null;
         const kelvin = 271.15;
-        const url_icon = `http://openweathermap.org/img/w/${weather[0].icon}.png`;
+        const url_icon = `https://openweathermap.org/img/w/${weather[0].icon}.png`;
         const alt =`clima de ${name}`;
         return (
             <div className="row">
